@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 import matplotlib.pyplot as plt
 
+
 # Chargement du jeu de données Iris
 data = datasets.load_iris()
 X, y = data.data[:, :2], data.target  # Utilisation uniquement des deux premières caractéristiques

@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copiez les fichiers requis dans le conteneur
 COPY requirements.txt ./
-COPY views.py ./
+COPY model.py ./
 
 # Installez les dépendances Python
 RUN pip install --no-cache-dir -r requirements.txt
@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Commande pour lancer votre application Flask
-CMD ["python", "views.py"]
+CMD ["python", "model.py"]
